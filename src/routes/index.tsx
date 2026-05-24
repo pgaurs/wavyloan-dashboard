@@ -184,7 +184,7 @@ function Sidebar({ applicantId, setApplicantId, onRun, running, stepStatus }: {
   stepStatus: Record<string, StepStatus>;
 }) {
   return (
-    <aside className="fixed left-0 top-[88px] bottom-0 w-[260px] bg-sidebar text-sidebar-foreground border-r border-sidebar-border flex flex-col p-4 gap-4 overflow-y-auto">
+    <aside className="fixed left-0 top-[60px] bottom-0 w-[260px] bg-sidebar text-sidebar-foreground border-r border-sidebar-border flex flex-col p-4 gap-4 overflow-y-auto">
       <div>
         <label className="text-[10px] uppercase tracking-wider text-sidebar-foreground/50 font-semibold">Applicant</label>
         <select
