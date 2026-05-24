@@ -153,7 +153,7 @@ function DisclaimerBanner() {
 
 function TopNav() {
   return (
-    <header className="fixed top-7 inset-x-0 z-40 h-[60px] bg-sidebar text-sidebar-foreground border-b border-sidebar-border overflow-hidden">
+    <header className="fixed top-0 inset-x-0 z-40 h-[60px] bg-sidebar text-sidebar-foreground border-b border-sidebar-border overflow-hidden">
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="wl-wave h-full w-[200%]" style={{
           background: "linear-gradient(90deg, transparent, oklch(0.55 0.18 142 / 0.4) 25%, transparent 50%, oklch(0.49 0.08 220 / 0.4) 75%, transparent)",
