@@ -340,10 +340,10 @@ function IntakeTab({ result }: { result: PipelineResult | null }) {
             <div className="grid grid-cols-2 gap-x-8 gap-y-4">
               <DataField label="Full Name" value={result.profile.full_name} />
               <DataField label="Employer" value={result.profile.employer} />
-              <DataField label="Annual Income" value={currency(result.profile.annual_income)} />
-              <DataField label="Loan Amount" value={currency(result.profile.loan_amount)} />
+              <DataField label="Annual Income" value={currency(result.profile.gross_annual_income)} />
+              <DataField label="Loan Amount" value={currency(result.profile.loan_amount_requested)} />
               <DataField label="Property Value" value={currency(result.profile.property_value)} />
-              <DataField label="Monthly Debt" value={currency(result.profile.monthly_debt)} />
+              <DataField label="Monthly Debt" value={currency(result.profile.monthly_debt_payments)} />
               <DataField label="Down Payment" value={currency(result.profile.down_payment)} />
               <DataField label="Loan Purpose" value={result.profile.loan_purpose} />
               <DataField label="Property Address" value={result.profile.property_address} className="col-span-2" />
