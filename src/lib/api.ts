@@ -87,7 +87,12 @@ export async function processApplication(applicantId: string): Promise<PipelineR
     body: JSON.stringify({ applicant_id: applicantId }),
   });
   if (!res.ok) throw new Error(`Backend returned ${res.status}`);
-  return (await res.json()) as PipelineResult;
+  const json = await res.json();
+  // Tolerate common wrappers: { data: {...} }, { result: {...} }, { pipeline: {...} }
+  const payload = (json?.profile ? json : json?.data ?? json?.result ?? json?.pipeline ?? json) as PipelineResult;
+  // eslint-disable-next-line no-console
+  console.log("[processApplication] response keys:", Object.keys(json ?? {}), "→ payload keys:", Object.keys(payload ?? {}));
+  return payload;
 }
 
 export function getMockResult(applicantId: string): PipelineResult {
