@@ -164,7 +164,7 @@ function TopNav() {
           <span className="text-2xl">🌊</span>
           <div>
             <div className="font-bold text-lg tracking-tight">Wavyloan</div>
-            <div className="text-[11px] text-sidebar-foreground/60 -mt-0.5">Deloitte OpenAI Technology Practice</div>
+            <div className="text-[11px] text-sidebar-foreground/60 -mt-0.5">Reimagining Loan Processing</div>
           </div>
         </div>
         <div className="flex items-center gap-2 text-[11px] text-sidebar-foreground/60">
