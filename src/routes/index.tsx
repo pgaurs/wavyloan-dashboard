@@ -99,9 +99,8 @@ function WavyloanApp() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <DisclaimerBanner />
       <TopNav />
-      <div className="flex pt-[88px]">
+      <div className="flex pt-[60px]">
         <Sidebar
           applicantId={applicantId}
           setApplicantId={setApplicantId}
@@ -154,7 +153,7 @@ function DisclaimerBanner() {
 
 function TopNav() {
   return (
-    <header className="fixed top-7 inset-x-0 z-40 h-[60px] bg-sidebar text-sidebar-foreground border-b border-sidebar-border overflow-hidden">
+    <header className="fixed top-0 inset-x-0 z-40 h-[60px] bg-sidebar text-sidebar-foreground border-b border-sidebar-border overflow-hidden">
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="wl-wave h-full w-[200%]" style={{
           background: "linear-gradient(90deg, transparent, oklch(0.55 0.18 142 / 0.4) 25%, transparent 50%, oklch(0.49 0.08 220 / 0.4) 75%, transparent)",
@@ -185,7 +184,7 @@ function Sidebar({ applicantId, setApplicantId, onRun, running, stepStatus }: {
   stepStatus: Record<string, StepStatus>;
 }) {
   return (
-    <aside className="fixed left-0 top-[88px] bottom-0 w-[260px] bg-sidebar text-sidebar-foreground border-r border-sidebar-border flex flex-col p-4 gap-4 overflow-y-auto">
+    <aside className="fixed left-0 top-[60px] bottom-0 w-[260px] bg-sidebar text-sidebar-foreground border-r border-sidebar-border flex flex-col p-4 gap-4 overflow-y-auto">
       <div>
         <label className="text-[10px] uppercase tracking-wider text-sidebar-foreground/50 font-semibold">Applicant</label>
         <select
