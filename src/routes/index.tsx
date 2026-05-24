@@ -167,10 +167,6 @@ function TopNav() {
             <div className="text-[11px] text-sidebar-foreground/60 -mt-0.5">Reimagining Loan Processing</div>
           </div>
         </div>
-        <div className="flex items-center gap-2 text-[11px] text-sidebar-foreground/60">
-          <Sparkles className="w-3.5 h-3.5" />
-          <span>API: <code className="font-mono text-sidebar-foreground/80">{API_BASE}</code></span>
-        </div>
       </div>
     </header>
   );
@@ -237,17 +233,9 @@ function Sidebar({ applicantId, setApplicantId, onRun, running, stepStatus }: {
         </ol>
       </div>
 
-      <div className="mt-auto">
-        <div className="text-[10px] uppercase tracking-wider text-sidebar-foreground/50 font-semibold mb-2">OpenAI Stack</div>
-        <div className="flex flex-wrap gap-1">
-          {["GPT-4o Vision", "o4-mini", "File Search RAG", "TTS", "Moderation"].map(p => (
-            <span key={p} className="text-[10px] rounded-full px-2 py-0.5 bg-sidebar-accent text-sidebar-foreground/80 border border-sidebar-border">{p}</span>
-          ))}
-        </div>
-        <div className="mt-3 pt-3 border-t border-sidebar-border flex items-center gap-2 text-[11px] text-sidebar-foreground/60">
-          <div className="w-1.5 h-1.5 rounded-full bg-sidebar-primary wl-pulse-dot" />
-          Powered by OpenAI
-        </div>
+      <div className="mt-auto pt-3 border-t border-sidebar-border flex items-center gap-2 text-[11px] text-sidebar-foreground/60">
+        <div className="w-1.5 h-1.5 rounded-full bg-sidebar-primary wl-pulse-dot" />
+        Powered by OpenAI
       </div>
     </aside>
   );
