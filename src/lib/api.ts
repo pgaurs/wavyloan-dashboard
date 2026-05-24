@@ -9,11 +9,11 @@ export interface Profile {
   applicant_id: string;
   full_name: string;
   employer: string;
-  annual_income: number;
-  loan_amount: number;
+  gross_annual_income: number;
+  loan_amount_requested: number;
   property_value: number;
   property_address: string;
-  monthly_debt: number;
+  monthly_debt_payments: number;
   down_payment: number;
   loan_purpose: string;
   extraction_confidence: number;
