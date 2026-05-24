@@ -99,9 +99,8 @@ function WavyloanApp() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <DisclaimerBanner />
       <TopNav />
-      <div className="flex pt-[88px]">
+      <div className="flex pt-[60px]">
         <Sidebar
           applicantId={applicantId}
           setApplicantId={setApplicantId}
